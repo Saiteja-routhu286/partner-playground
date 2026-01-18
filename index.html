@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- AUTH -->
+    <div id="auth">
+      <h2>Partner Playground</h2>
+      <input id="name" placeholder="Name" />
+      <input id="email" placeholder="Email" />
+      <input id="password" placeholder="Password" type="password" />
+      <button id="signup">Sign Up</button>
+      <button id="login">Login</button>
+    </div>
+
+    <!-- PLAYGROUND -->
+    <div id="playground" class="hidden">
+
+      <div class="topbar">
+        <span id="userName"></span>
+        <button id="logout">Logout</button>
+      </div>
+
+      <div class="tabs">
+        <button class="tabBtn active" data-tab="post">Post</button>
+        <button class="tabBtn" data-tab="tasks">Tasks</button>
+        <button class="tabBtn" data-tab="notes">Notes</button>
+      </div>
+
+      <div id="post" class="tab active">
+        <textarea id="postText" placeholder="Write something..."></textarea>
+        <input id="image" type="file" accept="image/*">
+        <button id="postBtn">Post</button>
+      </div>
+
+      <div id="tasks" class="tab">
+        <input id="taskText" placeholder="Add task..." />
+        <button id="addTask">Add Task</button>
+        <div id="taskList"></div>
+      </div>
+
+      <div id="notes" class="tab">
+        <textarea id="noteText" placeholder="Write note..."></textarea>
+        <button id="addNote">Save Note</button>
+        <div id="noteList"></div>
+      </div>
+
+      <div id="feed"></div>
+    </div>
+
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+
+  <script src="app.js"></script>
+</body>
+          </html>
