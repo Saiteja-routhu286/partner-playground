@@ -1,0 +1,29 @@
+body { font-family: Arial, sans-serif; background: #f3f3f3; margin: 0; }
+.container { max-width: 700px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 12px; }
+.hidden { display: none; }
+
+input, textarea, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+textarea { min-height: 90px; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs { display: flex; gap: 10px; margin-top: 15px; }
+.tabBtn { flex: 1; padding: 10px; cursor: pointer; }
+.tabBtn.active { background: #000; color: #fff; }
+
+.tab { display: none; }
+.tab.active { display: block; }
+
+.card { background: #f8f8f8; padding: 12px; margin-top: 10px; border-radius: 8px; }
+.card img { max-width: 100%; height: auto; border-radius: 6px; }
+
+.deleteBtn { background: #ff4d4d; color: #fff; border: none; padding: 6px 10px; cursor: pointer; margin-top: 10px; }
